@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100b1b">
+  <title>A Little Universe For You ✨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="fireworksCanvas" aria-hidden="true"></canvas>
+  <div class="stars" aria-hidden="true"></div>
+  <div id="heartsLayer" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a href="#" class="brand" id="brandLink">♡ YOUR LITTLE UNIVERSE</a>
+    <div class="top-controls">
+      <span id="slideCounter">01 / 03</span>
+      <button id="autoBtn" class="mini-button" aria-label="Pause automatic slideshow">
+        ❚❚ Auto
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- SLIDE 1: WELCOME -->
+    <section class="slide active" id="slide1"
+      aria-label="Welcome slide" aria-hidden="false">
+
+      <div class="hero-content">
+        <p class="eyebrow">✦ A LITTLE SOMETHING JUST FOR YOU ✦</p>
+
+        <div class="orbit">
+          <span class="orbit-heart">♥</span>
+        </div>
+
+        <p class="small-label">For someone truly special</p>
+
+        <h1>
+          Happy Birthday,
+          <span class="gradient-text">Beautiful Soul.</span>
+        </h1>
+
+        <p class="hero-text">
+          In a universe full of stars, you will always be
+          one of my favourite lights. ✨
+        </p>
+
+        <button id="enterBtn" class="primary-button">
+          Enter Your Universe <span>♡</span>
+        </button>
+
+        <p class="hint">Your little surprise awaits...</p>
+      </div>
+    </section>
+
+    <!-- SLIDE 2: MEMORIES, LETTER AND MUSIC -->
+    <section class="slide" id="slide2"
+      aria-label="Memories, letter and music" aria-hidden="true"
+      inert>
+
+      <div class="slide-content">
+        <div class="section-heading">
+          <p class="eyebrow">✦ CHAPTER TWO ✦</p>
+          <h2>Our Little <span class="gradient-text">Memories.</span></h2>
+          <p>Some moments deserve to live forever. ♡</p>
+        </div>
+
+        <section class="glass-card" id="memories">
+          <h2>Little Moments, Big Memories 📸</h2>
+          <p class="muted">Every picture holds a little piece of magic.</p>
+
+          <div class="gallery">
+            <figure>
+              <img src="img 1.jpeg" height="500" width="500" alt="Memory 1" loading="lazy">
+              <figcaption>Memory 01 ✨</figcaption>
+            </figure>
+            <figure>
+              <img src="img 2.jpeg" height="500" width="500" alt="Memory 2" loading="lazy">
+              <figcaption>Memory 02 ♡</figcaption>
+            </figure>
+            <figure>
+              <img src="img 3.jpeg" height="500" width="500" alt="Memory 3" loading="lazy">
+              <figcaption>Memory 03 🌙</figcaption>
+            </figure>
+            <figure>
+              <img src="img 4.jpeg" height="500" width="500" alt="Memory 4" loading="lazy">
+              <figcaption>Memory 04 💫</figcaption>
+            </figure>
+            <figure>
+              <img src="img 5.jpeg" height="500" width="500" alt="Memory 5" loading="lazy">
+              <figcaption>Memory 05 🦋</figcaption>
+            </figure>
+            <figure>
+              <img src="img 6.jpeg" height="500" width="500" alt="Memory 6" loading="lazy">
+              <figcaption>Memory 06 🌸</figcaption>
+            </figure>
+            <figure>
+              <img src="img 7.jpeg" height="500" width="500" alt="Memory 7" loading="lazy">
+              <figcaption>Memory 07 ✨</figcaption>
+            </figure>
+            <figure>
+              <img src="img 8.jpeg" height="500" width="500" alt="Memory 8" loading="lazy">
+              <figcaption>Memory 08 💙</figcaption>
+            </figure>
+            <figure>
+              <img src="img 9.jpeg" height="500" width="500" alt="Memory 9" loading="lazy">
+              <figcaption>Memory 09 🌙</figcaption>
+            </figure>
+            <figure>
+              <img src="img 10.jpeg" height="500" width="500" alt="Memory 10" loading="lazy">
+              <figcaption>Memory 10 ❤️</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="glass-card" id="letter">
+          <p class="eyebrow">A NOTE FROM THE HEART</p>
+          <h2>Your Secret Letter 💌</h2>
+          <p class="muted">Some feelings deserve their own little page.</p>
+
+          <button id="letterBtn" class="secondary-button">
+            Open Your Letter 💌
+          </button>
+
+          <div id="letterContent" class="letter-paper hidden">
+            <p class="letter-top">To someone special, ♡</p>
+
+            <p>
+              Happy Birthday to someone who makes ordinary moments
+              feel a little more magical.
+            </p>
+
+            <p>
+              I hope this new chapter brings you peaceful days,
+              genuine smiles, beautiful surprises, and the courage
+              to follow every dream your heart holds.
+            </p>
+
+            <p>
+              May all your dreams come true, may happiness always 
+              find you, and may your life be filled with love, laughter,
+               and endless beautiful moments.
+               You deserve all the wonderful things this world has to offer.
+                Keep smiling and shining always. ❤️✨🫶🏻
+            
+            </p>
+
+            <p>
+              Keep shining in your own beautiful way. The world
+              is brighter with you in it. ✨
+            </p>
+
+            <p class="signature">Made with love, just for you. ❤️</p>
+          </div>
+        </section>
+
+        <section class="glass-card" id="music">
+          <p class="eyebrow">YOUR LITTLE SOUNDTRACK</p>
+          <h2>A Song For You 🎵</h2>
+          <p class="muted">Press play and enjoy your little moment.</p>
+
+          <audio id="birthdaySong" loop preload="metadata">
+            <source src="song 1.mpeg" type="audio/mpeg">
+            Your browser does not support audio.
+          </audio>
+
+          <button id="musicBtn" class="secondary-button">
+            ▶ Play Our Song
+          </button>
+
+          <p id="musicStatus" class="hint" aria-live="polite">
+            A little melody, just for you.
+          </p>
+        </section>
+
+        <button class="primary-button next-chapter" data-go="2">
+          Continue to Your Surprise →
+        </button>
+      </div>
+    </section>
+
+    <!-- SLIDE 3: WISH AND FINAL REVEAL -->
+    <section class="slide" id="slide3"
+      aria-label="Birthday wish and final surprise"
+      aria-hidden="true" inert>
+
+      <div class="slide-content final-content">
+        <p class="eyebrow">✦ CHAPTER THREE ✦</p>
+
+        <div class="moon">🌙</div>
+
+        <h2>Close Your Eyes.<br>
+          <span class="gradient-text">Make A Wish.</span>
+        </h2>
+
+        <p class="hero-text">
+          Take a little breath, make a wish from your heart,
+          and let the universe listen. ✨
+        </p>
+
+        <button id="fireworksBtn" class="primary-button">
+          Make a Wish ✨
+        </button>
+
+        <p id="wishMessage" class="wish-message" aria-live="polite"></p>
+
+        <div class="glass-card final-card" id="finalReveal">
+          <p class="eyebrow">ONE LAST LITTLE SURPRISE</p>
+          <div class="cake">🎂</div>
+
+          <h2 id="finalTitle">
+            Today, the universe celebrates you.
+          </h2>
+
+          <p class="muted final-description">
+            May your next chapter be full of love, laughter,
+            new beginnings, and unforgettable memories. ❤️
+          </p>
+
+          <button id="revealBtn" class="secondary-button">
+            Reveal Your Final Surprise ♡
+          </button>
+
+          <p id="finalNote" class="final-note hidden">
+            You are one of a kind. Never forget how special you are. ❤️
+          </p>
+        </div>
+
+        <button class="secondary-button" id="replayBtn">
+          ↻ Relive the Surprise
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Manual slide navigation -->
+  <nav class="slide-nav" aria-label="Slideshow navigation">
+    <button id="prevBtn" class="nav-button" disabled>
+      ← Back
+    </button>
+
+    <div class="dots" aria-label="Choose a slide">
+      <button class="dot active" data-slide="0"
+        aria-label="Go to slide 1" aria-current="step"></button>
+      <button class="dot" data-slide="1"
+        aria-label="Go to slide 2"></button>
+      <button class="dot" data-slide="2"
+        aria-label="Go to slide 3"></button>
+    </div>
+
+    <button id="nextBtn" class="nav-button">
+      Next →
+    </button>
+  </nav>
+
+  <footer>
+    Made with a little stardust & a lot of love ♡
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
